@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+{%if emp_list %}
+<table border="1" margin='auto'>
+<thead>
+<th>Name</th>
+<th>Esal</th>
+45 DURGASOFT, # 202, 2nd Floor, HUDA Maitrivanam, Ameerpet, Hyderabad - 500038,
+ 040 – 64 51 27 86, 80 96 96 96 96, 92 46 21 21 43 | www.durgasoft.com
+</thead>
+{% for employee in employee_list %}
+<tr>
+<td>{{employee.name}}</td>
+<td>{{employee.sal}}</td>
+</tr>
+{% endfor %}
+</table>
+{% else %}
+<p>No Employee found</p>
+ {% endif %}
+ </body>
+ </html>
